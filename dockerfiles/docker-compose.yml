@@ -1,0 +1,12 @@
+version: '2'
+services:
+    ansible:
+        build: ansible
+        volumes:
+            - ./repos:/data
+
+    target1:
+        build: centos
+
+    target2:
+        build: centos
